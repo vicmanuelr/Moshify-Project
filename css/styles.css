@@ -380,7 +380,7 @@ a {
 
 /* Media */
 .media {
-  display:flex;
+  display: flex;
 }
 
 .media__title {
@@ -409,7 +409,6 @@ a {
 
 .quote__text::after {
   content: close-quote;
-  
 }
 
 .quote__author {
@@ -417,7 +416,6 @@ a {
   font-size: 2rem;
   margin-bottom: 0;
   font-style: normal;
-
 }
 
 .quote__organization {
@@ -442,5 +440,22 @@ a {
 
   .quote__organization {
     font-size: 1.6rem;
+  }
+}
+
+/* Grids */
+.grid {
+  display: grid;
+}
+
+@media screen and (min-width: 768px) {
+  .grid--cols-2 {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .grid--cols-3 {
+    grid-template-columns: 1fr 1fr 1fr;
   }
 }
