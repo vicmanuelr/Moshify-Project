@@ -176,7 +176,7 @@ a {
 
 .icon-container {
   align-items: center;
-  background-color: #f3f9fa;
+  background: #f3f9fa;
   border-radius: 100%;
   display: inline-flex;
   height: 64px;
@@ -548,4 +548,41 @@ a {
     justify-self: start;
     margin: 0 2rem;
   }
+}
+
+/* Collapsibles */
+.collapsible {
+
+}
+
+.collapsible__header {
+  display: flex;
+  justify-content: space-between;
+}
+
+.collapsible__heading {
+  margin: 0;
+  font-size: 3rem;
+}
+
+.collapsible__content {
+  max-height: 0;
+  overflow: hidden;
+  opacity: 0;
+  transition: all 0.3s;
+}
+
+.collapsible__chevron {
+  transform: rotate(-90deg);
+  transition: transform 0.3s;
+}
+
+.collapsible--expanded .collapsible__chevron{
+  transform: rotate(0);
+}
+
+.collapsible--expanded .collapsible__content {
+  max-height: 100vh;
+  overflow: visible;
+  opacity: 1;
 }
