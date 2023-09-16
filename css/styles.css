@@ -31,7 +31,6 @@ img {
   color: #fff;
 }
 
-
 html {
   /* Setting 62.5% of 16 px = 10px */
   font-size: 62.5%;
@@ -642,7 +641,6 @@ a {
 .block--dark h3 {
   color: #fff;
 }
-
 
 .block--skewed-right {
   padding-bottom: calc(var(--padding-vertical) + 4rem);
