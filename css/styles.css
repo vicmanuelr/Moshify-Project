@@ -393,7 +393,7 @@ a {
 
 .plan .list__item {
   margin-bottom: 2rem;
-  color: var(--color-headings)
+  color: var(--color-headings);
 }
 
 /* Popular badge */
@@ -424,7 +424,7 @@ a {
   }
 
   .plan__description {
-    font-size: 1.7;
+    font-size: 1.7rem;
   }
 }
 
@@ -872,7 +872,6 @@ a {
 }
 
 @media screen and (min-width: 768px) {
-
   .footer {
     font-size: 1.5rem;
   }
@@ -894,12 +893,12 @@ a {
     order: -1;
     margin-top: 2rem;
   }
-  
+
   .footer__copyright {
     font-size: 1.5rem;
   }
 
-  .footer__section { 
+  .footer__section {
     border: 0;
   }
 
