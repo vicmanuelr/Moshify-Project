@@ -26,6 +26,11 @@ img {
 }
 
 /* Typography Section */
+::selection {
+  background: var(--color-primary);
+  color: #fff;
+}
+
 
 html {
   /* Setting 62.5% of 16 px = 10px */
@@ -355,7 +360,7 @@ a {
 }
 
 .plan--popular {
-  transform: scale(1.10);
+  transform: scale(1.1);
 }
 
 .plan--popular:hover {
@@ -405,8 +410,6 @@ a {
   right: 5%;
 }
 
-
-
 @media screen and (min-width: 1024px) {
   .plan__name {
     font-size: 1.4rem;
@@ -432,6 +435,7 @@ a {
 
 .media__title {
   margin-top: 0;
+  color: #fff;
 }
 
 .media__body {
@@ -633,6 +637,13 @@ a {
   color: #fff;
 }
 
+.block--dark h1,
+.block--dark h2,
+.block--dark h3 {
+  color: #fff;
+}
+
+
 .block--skewed-right {
   padding-bottom: calc(var(--padding-vertical) + 4rem);
   clip-path: polygon(0 0, 100% 0, 100% 100%, 0 80%);
@@ -725,7 +736,6 @@ a {
   margin: 2rem 0 5rem;
 }
 
-
 @media screen and (min-width: 768px) {
   .hero {
     padding-top: 0;
@@ -769,14 +779,13 @@ a {
 .block-plans .card {
   max-width: 500px;
   margin: 0 auto;
-
 }
 
 /* Features Block */
 .feature {
   gap: 4rem 2rem;
-  margin: 12rem 0
-} 
+  margin: 12rem 0;
+}
 
 .feature:first-of-type {
   margin-top: 6rem;
@@ -788,4 +797,26 @@ a {
 
 .feature__text {
   text-align: left;
+}
+
+/* Showcase Block */
+.block-showcase {
+  clip-path: polygon(0 0, 100% 0, 100% 100%, 0 90%);
+}
+
+.block-showcase__img {
+  width: 100%;
+}
+
+@media screen and (min-width:768px) {
+  .block-showcase .grid {
+    grid-template-columns: 50% 50%;
+  }
+
+  .block-showcase__img {
+    width: auto;
+    max-width: 700px;
+    justify-self: end;
+  }
+  
 }
